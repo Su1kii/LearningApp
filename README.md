@@ -1151,7 +1151,8 @@ This project is ready for production deployment:
 2. **Frontend (Vercel)**:
    - Import GitHub repository
    - Set root directory to `frontend/`
-   - Set `VITE_API_URL` environment variable
+   - Set `VITE_API_URL` environment variable to: `https://learningapp-iear.onrender.com/api`
+   - See [FRONTEND_DEPLOY.md](./FRONTEND_DEPLOY.md) for detailed instructions
 
 ---
 

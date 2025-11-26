@@ -7,9 +7,7 @@ services:
     startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
     envVars:
       - key: DATABASE_URL
-        fromDatabase:
-          name: k12-lms-db
-          property: connectionString
+        value: postgresql://neondb_owner:npg_rUZpTBKl7v8W@ep-fragrant-brook-afdf1x7w-pooler.c-2.us-west-2.aws.neon.tech/neondb?sslmode=require&channel_binding=require
       - key: SECRET_KEY
         generateValue: true
       - key: ALGORITHM
@@ -17,11 +15,10 @@ services:
       - key: ACCESS_TOKEN_EXPIRE_MINUTES
         value: 30
       - key: CORS_ORIGINS
-        value: https://learning-5kpyjg1hl-su1kiis-projects.vercel.app/
+        value: https://learning-5kpyjg1hl-su1kiis-projects.vercel.app,https://learning-1bbze2ktk-su1kiis-projects.vercel.app,http://localhost:3000,http://localhost:5173
 
 databases:
   - name: k12-lms-db
     databaseName: lms_db
     user: lms_user
     plan: free
-

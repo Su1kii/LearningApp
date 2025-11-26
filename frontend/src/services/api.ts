@@ -1,12 +1,12 @@
 import axios from "axios";
 
-// Ensure proper API URL format (must end with /api)
+// Ensure proper API URL format (must end with /api, no trailing slash)
 const getApiUrl = (): string => {
   const envUrl = (import.meta as any).env?.VITE_API_URL;
   let url = envUrl || "http://localhost:8000/api";
 
-  // Remove trailing slash
-  url = url.endsWith("/") ? url.slice(0, -1) : url;
+  // Remove ALL trailing slashes
+  url = url.replace(/\/+$/, "");
 
   // If URL doesn't end with /api, add it
   if (!url.endsWith("/api")) {

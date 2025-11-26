@@ -1,10 +1,9 @@
-import os
-from dotenv import load_dotenv
-from fastapi import FastAPI
-from fastapi.middleware.cors import CORSMiddleware
 from app.config import settings
 from app.database import Base, engine
 from app.routers import ai, assignments, auth, courses, submissions
+from dotenv import load_dotenv
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 
 # Load environment variables from .env file
 load_dotenv()
@@ -39,4 +38,13 @@ def root():
         "message": settings.API_TITLE,
         "version": settings.API_VERSION,
         "docs": "/docs",
+    }
+
+
+@app.get("/api/cors-check")
+def cors_check():
+    """Debug endpoint to check CORS configuration"""
+    return {
+        "cors_origins": settings.CORS_ORIGINS,
+        "cors_origins_count": len(settings.CORS_ORIGINS),
     }
