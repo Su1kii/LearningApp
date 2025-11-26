@@ -19,7 +19,7 @@ class Settings:
         origin.strip() 
         for origin in os.getenv(
             "CORS_ORIGINS", 
-            "http://localhost:3000,http://localhost:5173,https://learning-1bbze2ktk-su1kiis-projects.vercel.app"
+            "http://localhost:3000,http://localhost:5173,https://learningapp-iear.onrender.com/"
         ).split(",")
     ]
 
