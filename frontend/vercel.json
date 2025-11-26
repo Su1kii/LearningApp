@@ -11,7 +11,7 @@
     }
   ],
   "env": {
-    "VITE_API_URL": "https://your-backend.onrender.com/api"
+    "VITE_API_URL": "https://learningapp-iear.onrender.com/"
   }
 }
 
