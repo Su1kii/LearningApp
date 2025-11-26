@@ -31,7 +31,7 @@ class Settings:
         origin.strip()
         for origin in os.getenv(
             "CORS_ORIGINS",
-            "http://localhost:3000,http://localhost:5173,https://learning-5kpyjg1hl-su1kiis-projects.vercel.app,https://learning-1bbze2ktk-su1kiis-projects.vercel.app",
+            "http://localhost:3000,http://localhost:5173,https://learning-5kpyjg1hl-su1kiis-projects.vercel.app,https://learning-1bbze2ktk-su1kiis-projects.vercel.app,https://learning-app-ten-blond.vercel.app",
         ).split(",")
         if origin.strip()  # Filter out empty strings
     ]
