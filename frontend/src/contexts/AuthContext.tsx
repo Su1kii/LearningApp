@@ -1,7 +1,13 @@
 import React, { createContext, useContext, useState, useEffect } from 'react'
 import axios from 'axios'
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000/api'
+// Ensure no trailing slash and proper format
+const getApiUrl = () => {
+  const url = import.meta.env.VITE_API_URL || 'http://localhost:8000/api'
+  return url.endsWith('/') ? url.slice(0, -1) : url
+}
+
+const API_URL = getApiUrl()
 
 interface User {
   id: number
