@@ -1,9 +1,5 @@
 # 📚 LearningAppAI – AI-Powered K-12 Learning Management System (FastAPI + React)
 
-<p align="center">
-  <img src="LearningAppAi.png" alt="LearningAppAI Screenshot" width="900">
-</p>
-
 LearningAppAI is a full-stack Learning Management System designed for K-12 education.  
 Students can enroll in courses, submit assignments, and instantly receive AI-generated grades and personalized learning recommendations.  
 Teachers can create courses, manage assignments, and view AI-assisted student performance.
@@ -14,7 +10,7 @@ Built with a **FastAPI backend**, **React (TypeScript) frontend**, **SQLAlchemy 
 
 ## 🖼️ Preview
 
-![LearningAppAI Screenshot](./LearningAppAi.png)
+![LearningAppAI Screenshot](LearningAppAi.png)
 
 ---
 
