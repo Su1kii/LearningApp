@@ -10,7 +10,7 @@ Built with a **FastAPI backend**, **React (TypeScript) frontend**, **SQLAlchemy 
 
 ## 🖼️ Preview
 
-![LearningAppAI Screenshot](LearningAppAi.png)
+![LearningAppAI Screenshot](./LearningAppAI.png)
 
 ---
 
