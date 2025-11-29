@@ -95,36 +95,8 @@ Frontend: http://localhost:3000
 ```
 
 🚀 Deployment (Quick)
-Backend: Deploy to Render / Heroku / your provider (Postgres in production)
+Backend: Deploy to Render 
 
-Frontend: Deploy to Vercel / Netlify (set VITE_API_URL env var)
+Frontend: Deploy to Vercel 
 
-🧾 Project Structure (summary)
-arduino
-Copy code
-backend/
-├── app/
-│   ├── routers/
-│   ├── models.py
-│   ├── schemas.py
-│   ├── services/   # AI logic
-│   └── utils/      # security, JWT
-└── main.py
 
-frontend/
-├── src/
-│   ├── pages/
-│   ├── contexts/
-│   └── services/
-└── vite.config.ts
-🔮 Future Improvements
-Transformer-based semantic grading (GPT/BERT)
-
-WebSockets for real-time updates
-
-File upload support (documents/images)
-
-Analytics dashboards and mobile app
-
-🤝 Contribute
-PRs welcome. Please open issues for bugs or feature requests.
